@@ -74,7 +74,3 @@ pip install numpy pandas matplotlib
 - Output scaling improves convergence drastically.
 - Best performance: **100% accuracy at `lr=0.1`, `epochs=10`** with scaled labels.
 - Demonstrates the potential of even simple models when correctly tuned.
-
-## Author
-**Chinmay Dharmik**  
-[The University of Adelaide](mailto:a1855351@adelaide.edu.au)
