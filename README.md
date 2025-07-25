@@ -1,11 +1,11 @@
 
-# 🧠 Diabetes Prediction Using Perceptron  
+# Diabetes Prediction Using Perceptron  
 *A Deep Learning Fundamentals Assignment*
 
-## 📚 Overview
+## Overview
 This project implements a **single-layer Perceptron** to classify individuals as diabetic or non-diabetic using the [Pima Indian Diabetes dataset](https://www.kaggle.com/uciml/pima-indians-diabetes-database). The Perceptron model is trained and evaluated across various learning rates and data splits, both with and without output scaling.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Perceptron_diabeties.ipynb   # Main notebook containing implementation, training, and evaluation
@@ -13,7 +13,7 @@ dataset/
 └── diabetes.csv              # Input dataset
 ```
 
-## 🚀 How It Works
+## How It Works
 
 ### 1. **Data Preprocessing**
 - Standardises features using training-set statistics.
@@ -40,8 +40,8 @@ Output = sign(w · x + b)
 
 | Output Scaling | Learning Rate | Accuracy (Train/Test) |
 |----------------|----------------|------------------------|
-| ❌ No           | 0.001 - 0.5     | ~55–79%                |
-| ✅ Yes          | 0.001 - 0.1     | **~100%** (at 0.01–0.1) |
+|  No           | 0.001 - 0.5     | ~55–79%                |
+|  Yes          | 0.001 - 0.1     | **~100%** (at 0.01–0.1) |
 
 Output scaling dramatically improved classification performance, reaching **100% accuracy** under the right hyperparameters.
 
@@ -69,12 +69,12 @@ pip install numpy pandas matplotlib
    jupyter notebook Perceptron_diabeties.ipynb
    ```
 
-## ✅ Results Summary
+## Results Summary
 
 - Output scaling improves convergence drastically.
 - Best performance: **100% accuracy at `lr=0.1`, `epochs=10`** with scaled labels.
 - Demonstrates the potential of even simple models when correctly tuned.
 
-## 📌 Author
+## Author
 **Chinmay Dharmik**  
 [The University of Adelaide](mailto:a1855351@adelaide.edu.au)
